@@ -6,5 +6,9 @@ fn main() {
                                                    // read any command line arguments & collect the values (from the iterator) into a vector
                                                    // calling the collect method on the elements the iterator produces, turns it into a vector
     //dbg!(args);                                    // print the vector using debug macro                 
-    
+    let query = &args[1];                          // saving the values of the two arguments in variables so they can be used again
+    let file_path = &args[2];
+
+    println!("Searching for {query}");
+    println!("In file {file_path}");
 }
